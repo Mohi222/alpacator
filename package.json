@@ -1,5 +1,6 @@
 {
   "name": "alpacator",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,13 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "akar-icons": "^1.9.2",
+    "html-to-image": "^1.9.0",
     "next": "12.0.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.43.4"
+    "sass": "^1.43.4",
+    "zustand": "^3.6.5"
   },
   "devDependencies": {
+    "@types/react": "^17.0.34",
     "eslint": "7",
-    "eslint-config-next": "12.0.3"
+    "eslint-config-next": "12.0.3",
+    "typescript": "^4.4.4"
   }
 }

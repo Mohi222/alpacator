@@ -1,0 +1,84 @@
+// Colors
+$black: #111;
+$dark: #222;
+$main: #0e7c7b;
+$second: #d62246;
+$white: #eeeeee;
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: $black;
+
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  li {
+    cursor: pointer;
+    border: 0.2rem $dark solid;
+    border-radius: 25px;
+    color: #eee;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0.5rem;
+    transition: background-color 0.1s linear;
+    &:hover {
+      background-color: $dark;
+    }
+
+    &.active {
+      border: 0.2rem $second solid;
+      &:hover {
+        background-color: $second;
+      }
+    }
+box-sizing: border-box;
+height: fit-content;
+  }
+}
+
+.alpaca {
+  min-width: 500px;
+  min-height: 500px;
+  position: relative;
+}
+
+.alpacaImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+cursor: pointer;
+  background-color: $white;
+  color: $dark;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0.5rem;
+    transition: background-color 0.1s linear;
+    &:hover {
+      background-color: $dark;
+  color: $white;
+    }
+    display: inline;
+}
